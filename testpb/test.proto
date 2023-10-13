@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package testpb;
+
+option go_package="github.com/nfangxu/protoc-gen-go-xorm/testpb;testpb";
+
+enum FirstEnum {
+    Unknown = 0;
+    FirstFoo = 1;
+}
+
+message Second {
+    enum SecondEnum {
+        Unknown = 0;
+        SecondFoo = 1;
+    }
+}
